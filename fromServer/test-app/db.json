@@ -1,0 +1,22 @@
+{
+  "product": {
+    "xiaomi": {
+      "brand": "Xiaomi",
+      "model": "Poco F1",
+      "storage": "64GB",
+      "colors": [
+        "Blue",
+        "Black"
+      ]
+    },
+    "samsung": {
+      "brand": "Samsung",
+      "model": "Galaxy S22",
+      "storage": "256GB",
+      "colors": [
+        "White",
+        "Grey"
+      ]
+    }
+  }
+}
