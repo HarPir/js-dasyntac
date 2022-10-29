@@ -6,8 +6,6 @@ const GET = require("./modules/getMethod");
 const PUT = require("./modules/putMethod");
 const DELETE = require("./modules/deleteMethod");
 const COMPLETE = require("./modules/complete");
-const buttons = require("./modules/buttons");
-
 
 const url = "http://localhost:8888/todo";
 
