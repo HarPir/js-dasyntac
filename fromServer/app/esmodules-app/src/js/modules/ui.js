@@ -10,6 +10,11 @@ export default {
 	filterComplete: document.createElement("button"),
 	filterUnComplete: document.createElement("button"),
 	filterAll: document.createElement("button"),
+	allDeleted: document.createElement("button"),
+	
+	yesBtn: document.querySelector(".yes"),
+	noBtn: document.querySelector("no"),
+	deleteModal: document.querySelector(".modal_wrapper"),
 
 	elementOptions() {
 		this.title.textContent = "CRUD";
@@ -27,17 +32,21 @@ export default {
 		this.filterComplete.setAttribute("data-filter", "filterComplete");
 		this.filterUnComplete.setAttribute("data-filter", "filterUnComplete");
 		this.filterAll.setAttribute("data-filter", "filterAll");
+		this.allDeleted.setAttribute("data-alldeleted", "allDelete");
 
 		this.filterComplete.textContent = "Complete";
 		this.filterUnComplete.textContent = "Uncomplete";
 		this.filterAll.textContent = "ALL";
+		this.allDeleted.textContent = "All Deleted";
+		
+		
 	},
 
 	appendElements() {
 		root.append(this.title, this.subTitle, this.form, this.listsBlock, this.filterWrapper);
 		this.form.append(this.screenBlock);
 		this.screenBlock.append(this.screenInput, this.screenAddBtn);
-		this.filterWrapper.append(this.filterComplete, this.filterUnComplete, this.filterAll);
+		this.filterWrapper.append(this.filterComplete, this.filterUnComplete, this.filterAll, this.allDeleted);
 	},
 
 	toHTML(id, value, state = false) {

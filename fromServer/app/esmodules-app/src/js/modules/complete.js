@@ -17,5 +17,6 @@ export default function (url, checkArr, id) {
 				checkState(false);
 			}
 		});
+		
 	});
 }

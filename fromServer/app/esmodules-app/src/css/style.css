@@ -154,3 +154,63 @@ p {
 	text-align: center;
 	color: #566;
 }
+.modal_wrapper {
+	/*display: none;*/
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+  }
+  .modal_wrapper.modal_wrapper-active {
+	display: flex;
+	
+	
+  }
+  .modal_wrapper form {
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	background: #fff;
+	border-radius: 8px;
+	width: 20%;
+	display:block;
+
+  }
+  .modal_wrapper form h4 {
+	
+	margin-bottom: 15px;
+	color: #555;
+	letter-spacing: 2px;
+	display: block;
+  }
+  .buttons {
+	display: flex;
+	justify-content: space-between;
+	
+  }
+  .modal_wrapper form .yes {
+	background: green;
+	display: block;
+	padding: 7px 20px;
+	border: none;
+	color: #fff;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: 15px;
+	
+  }
+  .modal_wrapper form .no {
+	background: red;
+	display: block;
+	padding: 7px 20px;
+	border: none;
+	color: #fff;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: 15px;
+	
+  }

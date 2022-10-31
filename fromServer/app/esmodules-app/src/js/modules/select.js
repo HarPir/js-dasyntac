@@ -8,6 +8,7 @@ export default async function (PATCH, DELETE, COMPLETE, url) {
 	DELETE(
 		document.querySelectorAll(".removeBtn"),
 		url
+	
 	);
 	COMPLETE(
 		url,
